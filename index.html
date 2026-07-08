@@ -1,0 +1,748 @@
+<!-- РЕТРО-СТИЛИЗАЦИЯ ПОД 1994 ГОД -->
+<body style="background: linear-gradient(135deg, #00BCD4 0%, #3F51B5 50%, #673AB7 100%); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; color: #000000; font-family: 'Arial'; margin: 20px;">
+    <title>Atiloot legacy</title>
+
+    <center>
+      
+
+        
+<!-- Логотип -->
+        <p>
+            <img src="атилоот.png" alt="Логотип Атилоот">
+        </p>
+
+
+        <!-- Поисковая форма -->
+        <form action="https://yandex.ru/search/" method="GET" target="_blank">
+            <p>
+              
+                <input type="search" name="text" placeholder="Поиск в интернете" required style="padding: 6px 10px; border: 1px solid #aaa; border-radius: 4px 0 0 4px; outline: none; width: 300px; box-sizing: border-box;">
+                <button type="button" 
+        onclick="alert('В разработке')" onmouseover="this.style.filter='brightness(0.85)'" 
+        onmouseout="this.style.filter='brightness(1)'"
+        onmousedown="this.style.filter='brightness(0.7)'"
+        onmouseup="this.style.filter='brightness(0.85)'"
+        style="font-family: 'Hololens MDL2 Assets'; background-color: #0077ff; color: white; border: 1px solid #0077ff; padding: 7px 10px; cursor: pointer; margin-left: -5px; box-sizing: border-box; vertical-align: top; font-size: 16px;">
+        
+    
+</button>
+</form>         
+            </p>
+        </form>
+        
+
+        
+
+        
+        <!-- Кнопки навигации -->
+        <p>
+            <button type="button" onclick="location.href='#'" onmouseover="this.style.filter='brightness(0.85)'" 
+        onmouseout="this.style.filter='brightness(1)'"
+        onmousedown="this.style.filter='brightness(0.7)'"
+        onmouseup="this.style.filter='brightness(0.85)'" style="font-family: Arial; padding: 3px 10px; background-color: #ff0000; border: 3px solid #ff0000; color: white; padding: 6px 15px; cursor: pointer; margin-left: -5px; box-sizing: border-box; vertical-align: top;">Карты</button>
+            &nbsp;&nbsp;&nbsp;
+            <button type="button" onclick="alert('Загрузка...')" onmouseover="this.style.filter='brightness(0.85)'" 
+        onmouseout="this.style.filter='brightness(1)'"
+        onmousedown="this.style.filter='brightness(0.7)'"
+        onmouseup="this.style.filter='brightness(0.85)'" style="font-family: Arial; padding: 3px 10px; background-color: #ff0000; border: 3px solid #ff0000; color: white; padding: 6px 15px; cursor: pointer; margin-left: -5px; box-sizing: border-box; vertical-align: top;">Финансы</button>
+        </p>
+
+        
+        
+
+    
+       
+
+<!-- Реклама -->
+<div style="margin-top: 30px; margin-bottom: 20px; width: 100%; height: 250px; background-color: #ffffff; border: 1px solid #e0e0e0; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; box-sizing: border-box; font-family: inherit; position: relative;">
+    <span style="font-size: 10px; color: #999; text-transform: uppercase; letter-spacing: 1px; align-self: flex-start;">Реклама</span>
+    <div style="flex-grow: 1;"></div>
+</div>
+
+        <!--Часики-->
+<div style="  position: fixed; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  background-color: #007bff; 
+  color: white; 
+  text-align: center; 
+  padding: 10px 20px; 
+  font-family: inherit; 
+  border-radius: 0px;
+  z-index: 9999;">
+    <p style="margin: 0; color: #ffffff;">
+        Время: <time id="clock">00:00:00</time>
+    </p>
+</div>
+
+
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        const clockEl = document.getElementById('clock');
+        clockEl.textContent = now.toLocaleTimeString('ru-RU');
+        clockEl.setAttribute('datetime', now.toISOString());
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+
+    
+    
+</div>
+
+
+
+    </center>
+
+    
+<div class="msn-grid">
+    <!-- Главная большая карточка -->
+    <article class="msn-card hero">
+      <div class="card-image-wrapper">
+        <img src="https://picsum.photos/800/600?random=1" alt="Главная новость">
+      </div>
+      <div class="card-content">
+        <span class="card-badge">Политика</span>
+        <h3 class="card-title">Глобальные изменения в городской инфраструктуре: чего ждать жителям в ближайшие годы</h3>
+        <p class="card-snippet">Эксперты обсудили новые экологические стандарты и внедрение умных систем управления трафиком в мегаполисах.</p>
+        <div class="card-footer">
+          <span class="card-source">РБК</span>
+          <span class="card-time">10 мин. назад</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Средняя карточка -->
+    <article class="msn-card medium">
+      <div class="card-image-wrapper">
+        <img src="https://i.ibb.co/Xf984JYf/2026-07-01-10-31-04.png" alt="Новость">
+      </div>
+      <div class="card-content">
+        <span class="card-badge">ФИНАНСЫ</span>
+        <h3 class="card-title">В Воксельской открылся магазин "Маскси"</h3>
+        <div class="card-footer">
+          <span class="card-source">HotNews.host</span>
+          <span class="card-time">1 ч. назад</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Стандартные карточки -->
+    <article class="msn-card standard">
+      <div class="card-image-wrapper">
+        <img src="https://picsum.photos/400/300?random=3" alt="Новость">
+      </div>
+      <div class="card-content">
+        <span class="card-badge">Авто</span>
+        <h3 class="card-title">Представлен новый электрический кроссовер с запасом хода 1000 км</h3>
+        <div class="card-footer">
+          <span class="card-source">За Рулем</span>
+          <span class="card-time">2 ч. назад</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="msn-card standard">
+      <div class="card-image-wrapper">
+        <img src="https://picsum.photos/400/300?random=4" alt="Новость">
+      </div>
+      <div class="card-content">
+        <span class="card-badge">Спорт</span>
+        <h3 class="card-title">Финальный заезд: сенсационная победа аутсайдера в гран-при</h3>
+        <div class="card-footer">
+          <span class="card-source">Спорт-Экспресс</span>
+          <span class="card-time">3 ч. назад</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="msn-card standard">
+      <div class="card-image-wrapper">
+        <img src="https://picsum.photos/400/300?random=5" alt="Новость">
+      </div>
+      <div class="card-content">
+        <span class="card-badge">Культура</span>
+        <h3 class="card-title">В музее изобразительных искусств открылась выставка редких полотен футуристов</h3>
+        <div class="card-footer">
+          <span class="card-source">Культура.ру</span>
+          <span class="card-time">4 ч. назад</span>
+        </div>
+      </div>
+    </article>
+    <!-- Карточка Погоды MSN (из стиля image_07d589.jpg) -->
+<article class="msn-card weather-tile" id="weather-widget">
+  
+  <!-- Верхняя панель: Локация и меню -->
+  <div class="weather-header">
+    <div class="weather-location">
+      <span class="geo-arrow">▼</span> <!-- Стрелочка локации -->
+      <span class="city-name">Белоград</span>
+      <span class="chevron-down">⌃</span>
+    </div>
+    <button class="weather-dots-btn">•••</button>
+  </div>
+
+  <!-- Главные показатели: Градусы и статус -->
+  <div class="weather-main-info">
+    <div class="weather-temp-block">
+      <!-- Иконка солнце за тучей -->
+      <div class="weather-sun-cloud">
+        <div class="w-sun"></div>
+        <div class="w-cloud"></div>
+      </div>
+      <div class="weather-degree">15<span class="celsius">°C</span></div>
+    </div>
+    <div class="weather-status-text">
+      <span class="drop-icon">💧</span>
+      <p>Дождь начнется примерно через 2,5 часа</p>
+      <span class="status-chevron">›</span>
+    </div>
+  </div>
+
+  <!-- Переключатели вкладок (Табы) -->
+  <div class="weather-tabs-nav">
+    <button class="w-tab">По часам</button>
+    <button class="w-tab">По дням</button>
+    <button class="w-tab active">Осадки</button>
+    <button class="w-tab">Карта</button>
+  </div>
+
+  <!-- Область контента со слайдером и графиком -->
+  <div class="weather-graph-section">
+    <!-- Левая стрелка клика -->
+    <button class="slider-arrow arrow-left">‹</button>
+    
+    <!-- Область самого графика осадков -->
+    <div class="graph-container">
+      <div class="precipitation-drops">
+        <div class="drop-group group-1">💧💧💧</div>
+        <div class="drop-group group-2">💧💧</div>
+        <div class="drop-group group-3">💧</div>
+      </div>
+      
+      <!-- Сетка и шкала времени -->
+      <div class="graph-timeline">
+        <div class="time-mark">21:00</div>
+        <div class="time-mark current-time">
+          <div class="blue-bar-pulse"></div> <!-- Синий столбик осадков -->
+          21:36
+        </div>
+        <div class="time-mark">22:12</div>
+      </div>
+    </div>
+
+    <!-- Правая стрелка клика -->
+    <button class="slider-arrow arrow-right">›</button>
+  </div>
+
+  <!-- Нижний футер карточки -->
+  <div class="weather-footer">
+    <div class="pagination-dots">
+      <span class="p-dot active"></span>
+      <span class="p-dot"></span>
+      <span class="p-dot"></span>
+      <span class="p-dot"></span>
+    </div>
+    <a href="#" class="full-forecast-btn">Посмотреть полный пр...</a>
+  </div>
+
+</article>
+  </div>
+
+  
+<style>
+/* Обнуление и базовые стили для демонстрации */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f3f2f1; /* Фирменный светло-серый фон Microsoft */
+  padding: 20px;
+  color: #ffffff;
+}
+
+.msn-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.msn-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.msn-header h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 4px;
+  background-color: #0078d4; /* Синий акцент Microsoft */
+}
+
+/* Сетка MSN */
+.msn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки на больших экранах */
+  gap: 16px;
+  grid-auto-flow: dense; /* Заполняет пустые пространства автоматически */
+}
+
+/* Базовый стиль карточки */
+.msn-card {
+  background-color: #ffffff;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 1.6px 3.6px 0 rgba(0,0,0,0.132), 0 0.3px 0.9px 0 rgba(0,0,0,0.108);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.msn-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6.4px 14.4px 0 rgba(0,0,0,0.132), 0 1.2px 3.6px 0 rgba(0,0,0,0.108);
+}
+
+/* Работа с изображениями */
+.card-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.msn-card:hover .card-image-wrapper img {
+  transform: scale(1.03); /* Легкий зум картинки при наведении */
+}
+
+/* Контент внутри карточки */
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-badge {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0078d4;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.card-title {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #201f1e;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Обрезка длинного текста до 3 строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-snippet {
+  font-size: 13px;
+  color: #605e5c;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #797775;
+}
+
+.card-source {
+  font-weight: 600;
+}
+
+/* --- Управление размерами карточек в сетке --- */
+
+/* Главная карточка: занимает 2 колонки в ширину и 2 строки в высоту */
+.msn-card.hero {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.msn-card.hero .card-image-wrapper {
+  height: 260px;
+}
+.msn-card.hero .card-title {
+  font-size: 20px;
+}
+
+/* Средняя карточка: занимает 2 колонки в ширину, но 1 строку в высоту */
+.msn-card.medium {
+  grid-column: span 2;
+}
+.msn-card.medium .card-image-wrapper {
+  height: 160px;
+}
+
+/* Обычные карточки */
+.msn-card.standard .card-image-wrapper {
+  height: 140px;
+}
+
+
+
+
+/* --- Адаптивность для мобильных устройств --- */
+
+@media (max-width: 900px) {
+  .msn-grid {
+    grid-template-columns: repeat(2, 1fr); /* Перестраиваем в 2 колонки */
+  }
+}
+
+@media (max-width: 600px) {
+  .msn-grid {
+    grid-template-columns: 1fr; /* На телефонах всё в одну колонку */
+  }
+  .msn-card.hero, .msn-card.medium {
+    grid-column: span 1; /* Отменяем растягивание */
+  }
+  .msn-card.hero .card-title {
+    font-size: 16px;
+  }
+  
+}
+
+/* Выбираем абсолютно все типы кнопок на сайте */
+button, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"] {
+    /* Добавляем плавность для любых изменений фильтра и фона */
+    transition: filter 0.15s cubic-bezier(0.4, 0, 0.2, 1), transform 0.1s ease;
+    /* Убеждаемся, что курсор всегда показывает, что это кликабельный элемент */
+    cursor: pointer;
+    /* Базовое состояние яркости */
+    filter: brightness(1);
+}
+
+/* Состояние: Курсор мыши наведен на кнопку */
+button:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
+    /* Снижаем яркость на 15% */
+    filter: brightness(0.85);
+}
+
+/* Состояние: Момент нажатия (клик) левой кнопкой мыши */
+button:active, 
+input[type="button"]:active, 
+input[type="submit"]:active, 
+input[type="reset"]:active {
+    /* Делаем кнопку еще темнее для четкого отклика */
+    filter: brightness(0.7);
+    /* Добавляем легкий эффект вдавливания (по желанию, можно удалить строку) */
+    transform: scale(0.98);
+}
+
+/* Исключение для неактивных (отключенных) кнопок, чтобы они не реагировали */
+button:disabled, 
+input[type="button"]:disabled, 
+input[type="submit"]:disabled {
+    filter: brightness(0.9) grayscale(0.5);
+    cursor: not-allowed;
+    transform: none;
+}
+/* Основной контейнер плитки погоды */
+.msn-card.weather-tile {
+  grid-column: span 2; /* Растягиваем на 2 колонки, чтобы занять пустоту на скриншоте */
+  background-image: url('https://assets.msn.com/weathermapdata/1/static/background/v2.0/jpg/partlysunny_day.jpg');
+  background-size: cover;
+  color: #ffffff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  min-height: 310px; /* Фиксированная высота под формат блоков MSN */
+}
+
+/* Стили заголовка */
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.geo-arrow {
+  transform: rotate(-45deg);
+  font-size: 12px;
+}
+.chevron-down {
+  font-size: 11px;
+  margin-top: 2px;
+  transform: rotate(180deg);
+}
+.weather-dots-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Блок температуры и статуса дождя */
+.weather-main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.weather-temp-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.weather-degree {
+  font-size: 42px;
+  font-weight: 300;
+  position: relative;
+}
+.celsius {
+  font-size: 20px;
+  position: absolute;
+  top: 4px;
+}
+
+/* Иконка погоды (Солнце за тучей на чистом CSS) */
+.weather-sun-cloud {
+  position: relative;
+  width: 44px;
+  height: 34px;
+}
+.w-sun {
+  width: 22px;
+  height: 22px;
+  background: #ffaa00;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  box-shadow: 0 0 10px #ffaa00;
+}
+.w-cloud {
+  width: 32px;
+  height: 20px;
+  background: #e1e1e1;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Текст статуса справа */
+.weather-status-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 140px;
+  font-size: 12px;
+  text-align: right;
+  line-height: 1.3;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+.weather-status-text p {
+  margin: 0;
+}
+.status-chevron {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Стили навигации табов */
+.weather-tabs-nav {
+  display: flex;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  padding: 2px;
+  margin-top: 12px;
+}
+.w-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  padding: 6px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+}
+.w-tab.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 #7dd3fc; /* Голубая полосочка под активным табом */
+}
+
+/* Секция интерактивного графика */
+.weather-graph-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 110px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  z-index: 5;
+}
+.arrow-left { left: -6px; border-radius: 0 4px 4px 0; }
+.arrow-right { right: -6px; border-radius: 4px 0 0 4px; }
+
+/* Область отрисовки графика внутри */
+.graph-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.precipitation-drops {
+  font-size: 10px;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.graph-timeline {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 4px;
+}
+.time-mark.current-time {
+  color: #7dd3fc;
+  position: relative;
+  font-weight: 600;
+}
+/* Синий столбик-индикатор осадков */
+.blue-bar-pulse {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 12px;
+  background: #00a2ff;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 0 6px #00a2ff;
+}
+
+/* Нижний футер */
+.weather-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.pagination-dots {
+  display: flex;
+  gap: 5px;
+}
+.p-dot {
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.p-dot.active {
+  background: #ffffff;
+}
+.full-forecast-btn {
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 14px;
+  border-radius: 14px;
+  transition: background 0.2s;
+}
+.full-forecast-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Глобальный эффект потемнения при клике/касании, который ты просил */
+.msn-card.weather-tile button,
+.msn-card.weather-tile .weather-status-text,
+.msn-card.weather-tile .full-forecast-btn {
+  transition: filter 0.1s ease;
+}
+.msn-card.weather-tile button:active,
+.msn-card.weather-tile .weather-status-text:active,
+.msn-card.weather-tile .full-forecast-btn:active {
+  filter: brightness(0.75) !important;
+}
+
+
+</style>
+
+
+
+</body>
